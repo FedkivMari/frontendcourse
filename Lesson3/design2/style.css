@@ -6,10 +6,29 @@ body{
     overflow: hidden;
 }
 .form {
-    background-color: gray;
-color: white;
-border: 1px solid gray;
-border-radius: 5px;
-padding: 10px;
-margin: auto;
+    background-color: rgb(228, 238, 241);
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    
+}
+#username, #password {
+    width: 250px; /* Ширина поля */
+    padding: 5px; /* Поля */
+    border: 1px solid #ccc; /* Параметры рамки */
+    color: #ff6d37; /* Цвет текста */
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: #039503;
+    border: #039503;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 260px;
+    margin: auto;
 }

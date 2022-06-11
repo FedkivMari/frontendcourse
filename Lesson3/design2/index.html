@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github</title>
     <link rel="stylesheet" href="/design2/style.css">
-</head>
+</head> 
 <body>
-    <img src="/design2/img/logo.png" alt="Logo">
+    <img src="./img/logo.png" width="100px" alt="Logo">
     <h1>Sign in to GitHub</h1>
     <form class="form">
-      <label> Username or email address</label>
+      <label for="username"> Username or email address</label>
       <br>
-      <input/>
+      <input id="username"/ type="text" name="username">
       <br>
       <div>
-        <label>Password</label>
+        <label for="password">Password</label>
         <label>Forgot password</label>
-      </div> 
-      <br>      
-      <input type="password" name="Password"/>
-      <button type="submit">Sign in</button>
+      </div>     
+      <input id="password" type="password" name="Password"/>
+      <br>
+      <button class="button" type="submit">Sign in</button>
     </form>
     <div>
         <p>New to GitHub <span>Create an accaunt</span></p>
-        <ul class="foter">
+        <ul style="list-style:none;" class="foter">
             <li><a Terms>Terms</li>
             <li><a>Privacy</li>
             <li><a>Security</li>
