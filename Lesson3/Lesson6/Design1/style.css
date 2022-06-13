@@ -1,0 +1,43 @@
+.start-page{
+    background-color: #60aef8;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    overflow: hidden;
+   
+}
+.left-part {
+    float: left;
+    width: 40vw;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.right-part {
+    float: right;
+    width: 55vw;
+    margin-top: 8%;
+    text-align: center;
+}
+.text {
+    color: hsl(240, 67%, 27%);
+    padding: 2px;
+    margin: 0px;
+}
+.text_short-line_wight {
+    font: 4.8rem Impact;
+    color: white;
+}
+.text_short-line {
+    font: 6.8rem Impact;
+
+}
+.text_long-line {
+    font: 8.8rem Impact;
+}
+.button_start {
+    background-color: hsl(240, 67%, 27%);
+    color: white ;
+    font: 2em sans-serif;
+    padding: 18px;
+   
+}
