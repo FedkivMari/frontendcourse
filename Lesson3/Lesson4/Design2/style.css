@@ -1,11 +1,11 @@
-body{
+.login{
     height: 100vh;
     width: 50vh;
     margin: 15% auto auto auto;
     text-align: center;
     overflow: hidden;
 }
-.form {
+.registration-form {
     background-color: rgb(228, 238, 241);
     color: black;
     border: 1px solid gray;
@@ -14,7 +14,7 @@ body{
     margin: auto;
     
 }
-#username, #password {
+.registration-form__name_input {
     width: 250px; /* Ширина поля */
     padding: 5px; /* Поля */
     border: 1px solid #ccc; /* Параметры рамки */
@@ -31,4 +31,7 @@ body{
     color: white;
     width: 260px;
     margin: auto;
+}
+.footer__menu {
+   list-style:none;
 }
