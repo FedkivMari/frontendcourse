@@ -134,10 +134,42 @@ header {
     width: 21%;
     display:inline-block;
     margin-right: 42px;
+    
 }
+
 .tool__logo{
     height: 50px;
 }
+.tool p{
+    width: 35px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+    
+}
+.tool__logo_time{
+    background-color: #4ca1f1;
+}
+.tool__logo_heart{
+    background-color: #F03E3D;
+}
+.tool__logo_arrow{
+    background-color: #7752BE;
+}
+.tool__logo_curve{
+    background-color: #FAB005;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  padding-top: 6px;
+}
+
+
 .tool__name{
     font-weight: 600;
     font-size: 22px;
@@ -149,6 +181,9 @@ header {
     font-size: 16px;
     line-height: 26px;
     color: #544837;
+}
+.tool:last-child div{
+    width: 300px;
 }
 .tools-block__btn{
     margin-left: 42%;
