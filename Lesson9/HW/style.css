@@ -1,0 +1,14 @@
+
+header{
+    height: 750px;
+    background-image: url(./img/Rectangle\ 1.png), url(./img/header_image.png);
+    padding: 42px 100px 73px 100px;
+    color: #FFFFFF;
+}
+.header__logo {
+    height: 24px;
+    float: left;
+}
+.header__menue {
+    float: right;
+}

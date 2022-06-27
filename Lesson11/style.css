@@ -1,0 +1,171 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    
+}
+.dating{
+   width: 100vw;
+   height: 250vh;
+   position: relative;
+   background-image: url('./img/bg.png');
+   background-attachment:fixed;
+}
+.dating__bg_top {
+    background-image: url('./img/bg_top.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 65%;
+    height: 450px;
+    right: 100px;
+}
+.dating__bg_bottom-left {
+    background-image: url('./img/bg_bottom_left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 350px;
+    bottom: 0px;
+}
+.dating__bg_bottom-right {
+    background-image: url('./img/bg_bottom_right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 350px;
+    bottom: 0px;
+    right: -180px;
+}
+.dating__bg_center {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+
+.header__content {
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 74px 10px 74px;
+    padding-top: 37px;
+}
+.logo {
+    float: left;
+    width: 82px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.logo p{
+    display: inline-block;
+}
+.navigation {
+    width: 446px;
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #7D8790;
+}
+.LogIn {
+   float: right;
+   width: 240px;
+   align-items: center;
+   
+}
+.LogIn div{
+    display: inline-block;
+    margin-right: 39px;
+    color: #7D8790;
+    font-weight: 600;
+    font-size: 16px;
+}
+.LogIn button{
+    width: 146px;
+    height: 52px;
+    background-color: #ED9B59;
+    border: #ED9B59;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #F4EBE6;
+    
+}
+.main__content{
+    width: 580px;
+    float: left;
+    margin-top: 117px;
+    padding-left: 73px;
+}
+.main__slogan {
+    margin-bottom: 13px;
+    color: #ED9B59;
+    font-size: 14px;
+    font-weight: 600;
+}
+.main__header{
+    margin-bottom: 37px;
+    color: #1A1D32;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 102%;
+}
+.main__header span {
+    color: #ED9B59;
+}
+.main__text{
+    width: 95%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1A1D32;
+}
+.email__form{
+    width: 515px;
+    height: 68px;
+    margin-top: 22px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: none;
+}
+.placeholder {
+    position: absolute;
+    color: #1A1D32;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.3;
+    top: 15px;
+    left: 25px;
+}
+.email__form button {
+    position: absolute;
+    right: 0px;
+    width: 180px;
+    height: 50px;
+    top: 8px;
+    right: 5px;
+    background-color: #ED9B59;
+    border: #ED9B59;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #F4EBE6;
+    
+}
+.main__icons {
+    float: right;
+    position: relative;
+    width: 600px;
+}
+.icons__top {
+    position: absolute;
+    width: 600px;
+    height: 260px;
+}
+.icons__top_chinchin {
+    top: 10px;
+}
