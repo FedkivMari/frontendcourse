@@ -1,0 +1,126 @@
+.life-changing {
+    width: 95vw;
+    height: 85vh;
+    padding-top: 20px;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./imgs/image\ 1.svg), url(./imgs/bg_3.svg);
+    background-position: 95% 0, right -100px ;
+    background-repeat: no-repeat;
+    background-size: 39%, 40%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.life-changing__nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.life-changing__nav__content {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.life-changing__app {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-radius: 16px;
+    padding: 0px 15px;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.life-changing__content {
+    width: 25%;
+    height: 55%;
+    padding-left: 160px;
+
+}
+.life-changing__content h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    color: #130F49;
+}
+.life-changing__content p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #0B0736;
+}
+.life-changing__content button {
+    width: 166px;
+    height: 61px;
+    background: #130F49;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+.targets {
+    width: 85vw;
+    height: 85vh;
+    padding-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.targets__img {
+    background-image: url(./imgs/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: 160px -1px;
+    padding-left: 160px;
+}
+.targets__text{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 28%;
+}
+.targets__text h1{
+    margin: 0;
+    font-weight: 600;
+    font-size: 50px;
+    color: #130F49;
+}
+.targets__text > p{
+    width: 95%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #130F49;
+    opacity: 0.4;
+}
+.targets__text button{
+    width: 166px;
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #CCE8FD;
+    border: #CCE8FD;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #130F49;
+}
+.btn__text p{
+    margin: 0;
+    opacity: 0.4;
+    font-size: 14px;
+    text-align: left;
+}
+.btn__text h5{
+    margin: 0;
+    font-size: 18px;
+}
