@@ -70,7 +70,7 @@
 }
 .targets {
     width: 85vw;
-    height: 85vh;
+    height: 75vh;
     padding-left: 5%;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -79,7 +79,8 @@
 .targets__img {
     background-image: url(./imgs/Ellipse.svg);
     background-repeat: no-repeat;
-    background-position: 160px -1px;
+    background-position: 162px 5px;
+    background-size: 72%;
     padding-left: 160px;
 }
 .targets__text{
@@ -87,6 +88,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     width: 28%;
+    padding: 25px 0px 35px 0px;
 }
 .targets__text h1{
     margin: 0;
@@ -123,4 +125,103 @@
 .btn__text h5{
     margin: 0;
     font-size: 18px;
+}
+.products-description {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.description__left {
+    float: left;
+    width: 60%;
+    height: 100%;
+    background-image: url(./imgs/bg_product.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 0px 50px;
+}
+.description__right {
+    float: right;
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+}
+.description__header{
+    padding: 3% 0% 3% 20%;
+    width: 40%;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 38px;
+    color: #130F49;
+}
+.product__imgs{
+    width: 35%;
+    height: 65%;
+    padding-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+.product {
+    height: 25vh;
+    width: 8vw;
+    background: #FFFFFF;
+    border-radius: 29px;
+    text-align: center;
+    padding: 5% 2%;
+    box-sizing: border-box;
+}
+.product h5{
+    margin: 0;
+    font-size: 14px;
+}
+.product p{
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.4;
+}
+.position_down {
+    align-self: flex-end;
+}
+.descr__text {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-weight: 400;
+    font-size: 28px;
+    color: #130F49;
+    opacity: 0.4;
+    width: 60%;
+}
+.descr__balance div {
+    display: flex;
+    align-items: center;
+    background-image: url(./imgs/Rectangle_rose.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.descr__balance span, .descr__barcode span {
+   padding-left: 1%;
+}
+.descr__balance h5, .descr__barcode h5{
+    margin: 10px;
+    padding-left: 5%;
+    font-size: medium;
+}
+.descr__balance p, .descr__barcode p{
+    padding-left: 12%;
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    opacity: 0.4;
+}
+.descr__barcode div {
+    display: flex;
+    align-items: center;
+    background-image: url(./imgs/Rectangle_pearch.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 }
