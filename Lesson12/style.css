@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(231, 234, 235);
+    padding-left: 50px;
+}
+header {
+    font-size: 56px;
+    font-weight: 700;
+}
+.form__line {
+    display: flex;
+    margin: 10px;
+}
+
+label{
+    font-size: 32px;
+    width: 35%;
+    
+}
+input {
+    width: 30%;
+    background-color: rgb(180, 177, 177);
+    border: none;
+    border-radius: 5px;
+}
+ .btns {
+    position: absolute;
+    bottom: 50px;
+ }
+button {
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    background-color: rgb(180, 177, 177);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
