@@ -68,7 +68,7 @@
     font-size: 18px;
     color: white;
 }
-.targets {
+.targets, .calories {
     width: 85vw;
     height: 75vh;
     padding-left: 5%;
@@ -83,27 +83,35 @@
     background-size: 72%;
     padding-left: 160px;
 }
-.targets__text{
+.calories__img {
+    background-image: url(./imgs/Ellipse_1.svg);
+    background-repeat: no-repeat;
+    background-position: 162px 5px;
+    background-size: 72%;
+    padding-left: 160px;
+    width: 37%;
+}
+.targets__text, .calories__text{
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    width: 28%;
-    padding: 25px 0px 35px 0px;
+    width: 60vw;
+    padding: 25px 0px 35px 160px;
 }
-.targets__text h1{
+.targets__text h1, .calories__text h1{
     margin: 0;
     font-weight: 600;
     font-size: 50px;
     color: #130F49;
 }
-.targets__text > p{
-    width: 95%;
+.targets__text > p, .calories__text > p {
+    width: 75%;
     font-weight: 400;
     font-size: 18px;
     color: #130F49;
     opacity: 0.4;
 }
-.targets__text button{
+.targets__text button, .calories__text button{
     width: 166px;
     height: 61px;
     display: flex;
@@ -224,4 +232,17 @@
     background-repeat: no-repeat;
     background-size: contain;
     
+}
+.partners {
+    margin: 50px 260px;
+    
+
+}
+.join-free{
+    margin: 50px 100px;
+    width: 80vw;
+    height: 60vh;
+    background: #D9F4FF;
+    border-radius: 56px;
+    border: #D9F4FF;
 }
