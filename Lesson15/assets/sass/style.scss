@@ -20,6 +20,7 @@ body{
         }
         &__nav{
             display: flex;
+            align-items: center;
             width: 50%;
             & ul {
                 width: 80%;
@@ -29,10 +30,9 @@ body{
                 align-items: center;
                 @include header6;
             }
-            & button{
-                width: 15%;
-                height: 50%;
-                margin: 3%;
+            & .btn{
+                width: 25%;
+                height: 70%;
                 background-color: $primary;
                 @include header6;
                 color: $white;
@@ -41,16 +41,16 @@ body{
                 border: none;
             }
         }
-        &__text {
+        &__content {
             width: 80%;
-            height: 90%;
-            padding: 3% 10%;
+            height: 78%;
+            padding: 1% 10%;
             background-image: url(../imgs/bg-main.svg);
             background-repeat: no-repeat;
             background-position: 80% 20%;
             background-size: 30%;
-            & div{
-                width: 38%;
+            &_text {
+                width: 48%;
                 height: 100%;
                 
                 & h1 {
@@ -61,10 +61,13 @@ body{
                     @include paragraph;
                 }
                 & button {
-                    height: 5%;
+                    height: 5vh;
+                    width: 10vw;
                     background-color: $secondary;
                     border-radius: 5px;
                     border: none;
+                    @include header6;
+                    color: $white;
                 }
             }
         }

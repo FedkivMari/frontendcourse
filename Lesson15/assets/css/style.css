@@ -26,6 +26,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
 }
 .shield-main__nav ul {
@@ -45,10 +48,9 @@ body {
   line-height: 18px;
   color: #03045E;
 }
-.shield-main__nav button {
-  width: 15%;
-  height: 50%;
-  margin: 3%;
+.shield-main__nav .btn {
+  width: 25%;
+  height: 70%;
   background-color: #03045E;
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
@@ -60,20 +62,20 @@ body {
   border-radius: 5px;
   border: none;
 }
-.shield-main__text {
+.shield-main__content {
   width: 80%;
-  height: 90%;
-  padding: 3% 10%;
+  height: 78%;
+  padding: 1% 10%;
   background-image: url(../imgs/bg-main.svg);
   background-repeat: no-repeat;
   background-position: 80% 20%;
   background-size: 30%;
 }
-.shield-main__text div {
-  width: 38%;
+.shield-main__content_text {
+  width: 48%;
   height: 100%;
 }
-.shield-main__text div h1 {
+.shield-main__content_text h1 {
   font-size: 48px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -81,17 +83,24 @@ body {
   color: #03045E;
   line-height: 68px;
 }
-.shield-main__text div p {
+.shield-main__content_text p {
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   line-height: 24px;
   color: #03045E;
 }
-.shield-main__text div button {
-  height: 5%;
+.shield-main__content_text button {
+  height: 5vh;
+  width: 10vw;
   background-color: #0098FF;
   border-radius: 5px;
   border: none;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+  color: #03045E;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
