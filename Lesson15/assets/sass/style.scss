@@ -72,4 +72,65 @@ body{
             }
         }
     }
+    &-domain {
+        background-color: $white;
+        width: 100vw;
+        height: 35vh;
+        box-sizing: border-box;
+        padding: 1% 10%;
+        display: flex;
+        &__search{
+            width: 50%;
+            & h3{
+                @include header3;
+            }
+            &_form{
+                width: 95%;
+                height: 5vh;
+                display: flex;
+                border-radius: 5px;
+                & div:nth-child(1){
+                    background-color: $cremy;
+                    width: 70%;
+                    border-top-left-radius: 5px; 
+                    border-bottom-left-radius: 5px; 
+                    @include paragraph;
+                    opacity: 0.5;
+                    padding: 2px 5%;
+                }
+                & div:nth-child(2){
+                    background-color: $secondary;
+                    width: 25%;
+                    @include header6;
+                    color: $white;
+                    border-top-right-radius: 5px; 
+                    border-bottom-right-radius: 5px;
+                    padding: 5px 5%; 
+                    text-align: center;
+                }
+            }
+        }
+        &__names{
+            width: 50%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            & div{
+                padding-top: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            & h6{
+                margin: 0;
+                @include header5;
+                color: $secondary;
+            }
+            & p{
+                @include paragraph;
+                opacity: 0.3;
+                margin: 0;
+            }
+        }
+    }
 }
