@@ -14,16 +14,26 @@ body{
             padding: 1% 10%;
             display: flex;
             justify-content: space-between;
+            @media  screen and (max-width: 800px) {
+                display: block;
+            }
             & img {
                 width: 15%;
             }
         }
         &__nav{
-            display: flex;
             align-items: center;
-            width: 50%;
+            width: 80%;
+            display: flex;
+            @media  screen and (max-width: 800px) {
+                width: 100%;
+                display: block;
+                & ul {
+                    font-size: 14px;
+                }
+            }
             & ul {
-                width: 80%;
+                width: 75%;
                 list-style: none;
                 display: flex;
                 justify-content: space-around;
