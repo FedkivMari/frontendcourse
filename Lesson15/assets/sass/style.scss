@@ -5,7 +5,7 @@ body{
 }
 .shield{
     &-main {
-        background-color: $cremy;
+        background-color: #F7F8FD;
         width: 100vw;
         height: 75vh;
         &__header{
@@ -140,6 +140,34 @@ body{
                 @include paragraph;
                 opacity: 0.3;
                 margin: 0;
+            }
+        }
+    }
+    &-services {
+        background-color: rgb(245, 245, 245, 0.5);
+        width: 100%;
+        & h2 {
+            @include header2;
+            text-align: center;
+            padding-top: 8%;
+        }
+        &__wrap {
+             width: 80%;
+             padding: 1% 10%;
+             display: grid;
+             grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        }
+        &__conteiner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .conteiner__icon  {
+                background-color: $cremy;
+                border-radius: 10px;
+                & img {
+                    
+                }
             }
         }
     }
