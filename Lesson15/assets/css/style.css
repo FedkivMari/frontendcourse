@@ -4,7 +4,7 @@ body {
 }
 
 .shield-main {
-  background-color: #F6F6F6;
+  background-color: #F7F8FD;
   width: 100vw;
   height: 75vh;
 }
@@ -147,7 +147,7 @@ body {
   border-radius: 5px;
 }
 .shield-domain__search_form div:nth-child(1) {
-  background-color: #F6F6F6;
+  background-color: #f5f5f5;
   width: 70%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -236,5 +236,46 @@ body {
   color: #03045E;
   opacity: 0.3;
   margin: 0;
+}
+.shield-services {
+  background-color: rgba(245, 245, 245, 0.5);
+  width: 100%;
+}
+.shield-services h2 {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 46px;
+  color: #03045E;
+  text-align: center;
+  padding-top: 8%;
+}
+.shield-services__wrap {
+  width: 80%;
+  padding: 1% 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+}
+.shield-services__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shield-services__conteiner .conteiner__icon {
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
