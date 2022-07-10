@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 200vh;
+    height: 400vh;
     width: 100vw;
 }
 .token-main {
@@ -53,7 +53,7 @@ body {
         width: 90%;
         display: flex;
         justify-content: space-between;
-        background-image: url(./imgs/Mask\ Group.svg);
+        background-image: url(./imgs/bgr_distribute.svg);
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: 60%;
@@ -145,6 +145,69 @@ body {
             color: #E20613;
         }
     }
+    &__supply {
+        height: 160vh;
+        width: 100%;
+        background-image: url(./imgs/bgr_supply.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 10%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        & div {
+            width: 50%;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+            color: #0F1320;
+            padding: 3%;
+            & h4 {
+                margin: 0;
+                padding-left: 15%;
+                padding-right: 15%;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 119%;
+                letter-spacing: -0.02em;
+            } 
+            & h1 {
+                margin: 5% 0% 0% 0%;
+                padding-left: 15%;
+                padding-right: 15%;
+                font-weight: 700;
+                font-size: 66px;
+                line-height: 66px;
+                letter-spacing: -0.02em;
+                color: #19A255;
+            }
+            & p{
+                margin-top: 0;
+                text-align: end;
+                padding-left: 15%;
+                padding-right: 15%;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #000000;
+                
+            }
+            &:last-child {
+                align-self: flex-start;
+                & h1 {
+                    color: #FFD100;
+                }
+                & p:last-child {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 20px;
+                    opacity: 0.6;
+                }   
+            }
+        } 
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -210,6 +273,58 @@ body {
                     padding-left: 10%;
                 }
             }
+        }
+        &__supply {
+            height: 100vh;
+            background-image: url(./imgs/bgr_supply_500.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            justify-content: space-around;
+            padding: 15% 5%;
+            align-items: center;
+            & div {
+                width: 90%;
+                padding: 5%;
+                & h4 {
+                    margin: 0;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 119%;
+                    letter-spacing: -0.02em;
+                } 
+                & h1 {
+                    margin: 5% 0% 0% 0%;
+                    padding-left: 0%;
+                    padding-right: 0%;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: 0.05em;
+                    color: #19A255;
+                }
+                & p{
+                    margin-top: 0;
+                    text-align: end;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    font-size: 16px;
+                    line-height: 24px;
+                    
+                    
+                    
+                }
+                &:last-child {
+                    align-self: center;
+                    & p:last-child {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 18px;
+                        opacity: 0.6;
+                    }   
+                }
+            } 
         }
     }
 }
