@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
 }
 
@@ -11,13 +11,13 @@ body {
   color: white;
 }
 .token-main header {
-  height: 10%;
+  height: 10vh;
 }
 .token-main__stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30%;
+  height: 30vh;
   padding-left: 5%;
   padding-right: 5%;
   width: 90%;
@@ -61,6 +61,48 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
 }
+.token-main__distribute {
+  height: 50vh;
+  padding: 5%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(./imgs/Mask\ Group.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+.token-main__distribute div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.token-main__distribute p {
+  font-size: 20px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.token-main__distribute p:last-child {
+  text-align: end;
+}
+.token-main__distribute span {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 66px;
+  letter-spacing: -0.02em;
+}
 .token-main__plan {
   width: 90%;
   display: -webkit-box;
@@ -74,9 +116,44 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.token-main__plan div {
-  width: 14%;
+.token-main__plan .plan__conteiner {
+  width: 15.5%;
   height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #171B29;
+  border-radius: 25px;
+  margin: 0.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.token-main__plan h4 {
+  margin: 5% 0%;
+  font-size: 15px;
+  opacity: 0.7;
+  padding-left: 38%;
+}
+.token-main__plan p {
+  margin: 5% 0%;
+  font-size: 14px;
+  opacity: 0.7;
+  padding-left: 38%;
+}
+.token-main__plan .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.token-main__plan .logo p {
+  opacity: 1;
+  font-weight: 700;
+  padding-left: 0%;
+}
+.token-main__plan .logo__header {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,9 +161,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #555558;
-  border-radius: 25px;
-  margin: 0.5%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.token-main__plan .logo__header h5 {
+  margin: 0%;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+.token-main__plan .green {
+  color: #22A75D;
+}
+.token-main__plan .yellow {
+  color: #FFD100;
+}
+.token-main__plan .blue {
+  color: #0F87CA;
+}
+.token-main__plan .red {
+  color: #E20613;
 }
 
 @media screen and (max-width: 500px) {
@@ -110,14 +204,55 @@ body {
     line-height: 20px;
   }
   .token-main__stats div p:last-child {
-    justify-self: flex-end;
+    text-align: end;
   }
   .token-main__stats div span {
     font-size: 50px;
     line-height: 45px;
   }
-  .token-main__plan div {
+  .token-main__distribute {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-position: bottom;
+    background-size: 100%;
+  }
+  .token-main__distribute div {
+    height: 30%;
+    width: 70%;
+  }
+  .token-main__distribute div:first-child {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .token-main__distribute div p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .token-main__distribute div p:last-child {
+    text-align: end;
+  }
+  .token-main__distribute div span {
+    font-size: 36px;
+    line-height: 56px;
+  }
+  .token-main__plan {
+    padding-top: 5%;
+  }
+  .token-main__plan .plan__conteiner {
     width: 40%;
+  }
+  .token-main__plan .plan__conteiner .logo p {
+    padding-left: 0%;
+    margin-top: 10%;
+  }
+  .token-main__plan .plan__conteiner h4, .token-main__plan .plan__conteiner p {
+    padding-left: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
