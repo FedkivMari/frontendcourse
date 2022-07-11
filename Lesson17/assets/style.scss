@@ -10,15 +10,49 @@ body {
     color: white;
     & header {
         height: 10vh;
+        padding: 2% 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & img {
+            width: 15%;
+        }
+        & .nav {
+            width: 60%;
+            display: flex;
+            justify-content: flex-start;
+            & a {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: white;
+                padding: 0% 2%;
+            }
+        }
+        & .btns {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            & div{
+                padding: 3% 10%;
+                &:last-child {
+                    border: 2px solid #22A75D;
+                    border-radius: 52px;
+                }    
+            }
+        }
     }
     &__stats{
         display: flex;
         height: 30vh;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
+        padding-left: 8%;
+        padding-right: 8%;
+        width: 80%;
         & h2{
-            width: 30%;
+            width: 35%;
             margin-top: 0px;
             font-size: 36px;
             line-height: 42px;
@@ -208,9 +242,45 @@ body {
             }
         } 
     }
+    & footer{
+        width: 100%;
+        height: 77vh;
+        background-image: url(./imgs/bgr_footer.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 130%;
+    }
+    &__media {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        & span {
+            position: relative;
+            font-size: 48px;
+            opacity: 0.05;
+        }
+        & img {
+            position: absolute;
+        }    
+    }
+     
+
+    &__footer-menu{
+        display: flex;
+        justify-content: space-around;
+        padding: 10% 20%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    }
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        height: 300vh;
+    }
     .token-main {   
         &__stats{
                 flex-direction: column;
@@ -325,6 +395,16 @@ body {
                     }   
                 }
             } 
+        }
+        & footer {
+            width: 100%;
+            height: 77vh;
+            background-image: none;
+           
+
+        }
+        &__footer-menu {
+            display: none;
         }
     }
 }
