@@ -15,18 +15,20 @@ body {
         justify-content: space-between;
         align-items: center;
         & img {
-            width: 15%;
+            height: 30px;
         }
         & .nav {
             width: 60%;
+            margin: 0;
             display: flex;
             justify-content: flex-start;
-            & a {
+            & li {
                 font-weight: 700;
-                font-size: 12px;
-                line-height: 15px;
+                font-size: 16px;
+                line-height: 18px;
                 color: white;
                 padding: 0% 2%;
+                list-style-type: none;
             }
         }
         & .btns {
@@ -42,6 +44,14 @@ body {
                     border: 2px solid #22A75D;
                     border-radius: 52px;
                 }    
+            }
+        }
+        .mobile{
+            &-on{
+                display: block;
+            }
+            &-off{
+               display: none;
             }
         }
     }
@@ -277,11 +287,38 @@ body {
     }
 }
 
+
 @media screen and (max-width: 500px) {
     body {
         height: 300vh;
     }
-    .token-main {   
+    .token-main { 
+        & header{
+            position: relative;
+            z-index: 1;
+            align-items: center;
+            & nav{
+                background-color: #0F1320;
+                flex-direction: column;
+                height: 10vh;
+                width: 100%;
+                position: absolute;
+                top:0;
+                left: 0;
+                z-index: 10;
+                   
+            }
+            .mobile{
+                &-on{
+                   display: none;
+                   
+
+                }
+                &-off{
+                   display: block;
+                }
+            }
+        }  
         &__stats{
                 flex-direction: column;
                 width: 90%;
