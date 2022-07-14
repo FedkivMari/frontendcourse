@@ -1,0 +1,114 @@
+@import './constans.scss';
+body {
+    margin: 0;
+}
+
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0F1320;
+    background-image: url(../imgs/bgr_main.svg), url(../imgs/Frame\ 45.svg);
+    background-repeat: no-repeat;
+    background-position: center right, top left;
+    background-size: 50%, 100%;
+    & .header{
+        height: 8%;
+        width: 90%;
+        padding: 2% 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & img {
+            width: 185px;
+        }
+        & .nav {
+            width: 60%;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            & li {
+                @include header5;
+                padding: 0% 2%;
+                list-style-type: none;
+            }
+        }
+        & .btns {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            @include paragraph;
+            & div{
+                padding: 3% 10%;
+                &:last-child {
+                    border: 2px solid #22A75D;
+                    border-radius: 52px;
+                }    
+            }
+        } 
+    }
+    & .main {
+        width: 532px;
+        height: 40%;
+        padding-left: 10%;
+        padding-top: 8%;
+        & h5{
+            background: linear-gradient(0deg, #2B3087 0%, #00B4EC 81.99%), #FFD100;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            
+        }
+        & h1{
+            @include header1;
+        }
+        & p {
+            @include paragraph;
+            opacity: 0.6;
+        }
+        &__btn{
+            padding: 2% 5%;
+            background-color: #22A75D;
+            border: 2px solid #22A75D;
+            border-radius: 52px;
+            @include header5;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .wrap{
+        background-image: none;
+        & .header{
+            width: 90%;
+            padding: 2% 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & .nav {
+               display: none;
+            }
+            & .btns {
+                display: none;
+            } 
+        }
+        & .main {
+            width: 90%;
+            height: 89%;
+            padding: 0% 5%;
+            background-image: url(../imgs/bgr_mobile.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+            & h5{
+                margin: 5px;
+            }
+            &__btn{
+                background-color: #22A75D;
+                border: 2px solid #22A75D;
+                border-radius: 52px;
+                font-size: 14px;
+            }
+        }
+    }
+}    
