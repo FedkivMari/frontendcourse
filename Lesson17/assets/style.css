@@ -26,6 +26,12 @@ body {
 .token-main header img {
   height: 30px;
 }
+.token-main header .mobile-on {
+  display: none;
+}
+.token-main header .mobile-off {
+  display: block;
+}
 .token-main header .nav {
   width: 60%;
   margin: 0;
@@ -63,8 +69,9 @@ body {
   border: 2px solid #22A75D;
   border-radius: 52px;
 }
-.token-main header .mobile-off {
-  display: none;
+.token-main header span {
+  color: white;
+  cursor: pointer;
 }
 .token-main__stats {
   display: -webkit-box;
@@ -355,13 +362,20 @@ body {
 
   .token-main header {
     position: relative;
+    z-index: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .token-main header nav {
+  .token-main header .nav {
     background-color: #0F1320;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 10vh;
     width: 100%;
     position: absolute;
@@ -370,10 +384,10 @@ body {
     z-index: 10;
   }
   .token-main header .mobile-on {
-    display: none;
+    display: block;
   }
   .token-main header .mobile-off {
-    display: block;
+    display: none;
   }
   .token-main__stats {
     -webkit-box-orient: vertical;
