@@ -24,10 +24,11 @@ body {
           align-items: center;
 }
 .token-main header img {
-  width: 15%;
+  height: 30px;
 }
 .token-main header .nav {
   width: 60%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,12 +36,13 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.token-main header .nav a {
+.token-main header .nav li {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 18px;
   color: white;
   padding: 0% 2%;
+  list-style-type: none;
 }
 .token-main header .btns {
   width: 15%;
@@ -60,6 +62,9 @@ body {
 .token-main header .btns div:last-child {
   border: 2px solid #22A75D;
   border-radius: 52px;
+}
+.token-main header .mobile-off {
+  display: none;
 }
 .token-main__stats {
   display: -webkit-box;
@@ -348,6 +353,28 @@ body {
     height: 300vh;
   }
 
+  .token-main header {
+    position: relative;
+  }
+  .token-main header nav {
+    background-color: #0F1320;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .token-main header .mobile-on {
+    display: none;
+  }
+  .token-main header .mobile-off {
+    display: block;
+  }
   .token-main__stats {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
