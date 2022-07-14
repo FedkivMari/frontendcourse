@@ -17,6 +17,14 @@ body {
         & img {
             height: 30px;
         }
+        .mobile{
+            &-on{
+                display: none;
+            }
+            &-off{
+               display: block;
+            }
+        }
         & .nav {
             width: 60%;
             margin: 0;
@@ -46,14 +54,11 @@ body {
                 }    
             }
         }
-        .mobile{
-            &-on{
-                display: block;
-            }
-            &-off{
-               display: none;
-            }
+        & span {
+            color: white;
+            cursor: pointer;
         }
+     
     }
     &__stats{
         display: flex;
@@ -296,10 +301,12 @@ body {
         & header{
             position: relative;
             z-index: 1;
-            align-items: center;
-            & nav{
+            align-items:center;
+            
+            & .nav{
                 background-color: #0F1320;
                 flex-direction: column;
+                justify-content: space-evenly;
                 height: 10vh;
                 width: 100%;
                 position: absolute;
@@ -310,12 +317,12 @@ body {
             }
             .mobile{
                 &-on{
-                   display: none;
+                display: block;
                    
 
                 }
                 &-off{
-                   display: block;
+                   display: none;
                 }
             }
         }  
