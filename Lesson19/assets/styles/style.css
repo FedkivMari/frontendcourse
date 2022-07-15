@@ -7,13 +7,13 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #0F1320;
-  background-image: url(../imgs/bgr_main.svg), url(../imgs/Frame\ 45.svg);
+  background-image: url(../imgs/Frame\ 45.svg);
   background-repeat: no-repeat;
-  background-position: center right, top left;
-  background-size: 50%, 100%;
+  background-position: top left;
+  background-size: 100%;
 }
 .wrap .header {
-  height: 8%;
+  height: 40px;
   width: 90%;
   padding: 2% 3%;
   display: -webkit-box;
@@ -28,6 +28,8 @@ body {
 }
 .wrap .header img {
   width: 185px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .wrap .header .nav {
   width: 60%;
@@ -53,7 +55,10 @@ body {
     font-size: 14px;
   }
 }
-.wrap .header .btns {
+.wrap .header .nav li:hover {
+  cursor: pointer;
+}
+.wrap .header__btns {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,31 +73,46 @@ body {
   color: white;
 }
 @media screen and (max-width: 500px) {
-  .wrap .header .btns {
+  .wrap .header__btns {
     font-size: 14px;
   }
 }
-.wrap .header .btns div {
+.wrap .header__btns div {
   padding: 3% 10%;
 }
-.wrap .header .btns div:last-child {
+.wrap .header__btns div:last-child {
   border: 2px solid #22A75D;
   border-radius: 52px;
 }
-.wrap .main {
-  width: 532px;
-  height: 40%;
-  padding-left: 10%;
-  padding-top: 8%;
+.wrap .header__btns div:hover {
+  cursor: pointer;
 }
-.wrap .main h5 {
+.wrap .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 85%;
+  padding-left: 10%;
+  margin: 0px;
+}
+.wrap .main__content {
+  width: 532px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.wrap .main__content h5 {
   background: -webkit-gradient(linear, left bottom, left top, from(#2B3087), color-stop(81.99%, #00B4EC)), #FFD100;
   background: linear-gradient(0deg, #2B3087 0%, #00B4EC 81.99%), #FFD100;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.wrap .main h1 {
+.wrap .main__content h1 {
   font-size: 48px;
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 700;
@@ -101,12 +121,12 @@ body {
   color: white;
 }
 @media screen and (max-width: 500px) {
-  .wrap .main h1 {
+  .wrap .main__content h1 {
     font-size: 36px;
     line-height: 36px;
   }
 }
-.wrap .main p {
+.wrap .main__content p {
   font-size: 16px;
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
@@ -115,7 +135,7 @@ body {
   opacity: 0.6;
 }
 @media screen and (max-width: 500px) {
-  .wrap .main p {
+  .wrap .main__content p {
     font-size: 14px;
   }
 }
@@ -135,11 +155,18 @@ body {
     font-size: 14px;
   }
 }
+.wrap .main__btn:hover {
+  cursor: pointer;
+}
+.wrap .main__img {
+  width: 50%;
+  background-image: url(../imgs/bgr_main.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
 
-@media screen and (max-width: 500px) {
-  .wrap {
-    background-image: none;
-  }
+@media screen and (max-width: 480px) {
   .wrap .header {
     width: 90%;
     padding: 2% 5%;
@@ -152,24 +179,36 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100px;
   }
   .wrap .header .nav {
     display: none;
   }
-  .wrap .header .btns {
+  .wrap .header__btns {
     display: none;
   }
   .wrap .main {
+    width: 100%;
+    padding-left: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrap .main__content {
     width: 90%;
-    height: 89%;
+    height: 49%;
     padding: 0% 5%;
+  }
+  .wrap .main__content h5 {
+    margin: 5px;
+  }
+  .wrap .main__img {
+    width: 100%;
+    height: 50%;
     background-image: url(../imgs/bgr_mobile.svg);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-  }
-  .wrap .main h5 {
-    margin: 5px;
+    background-size: cover;
   }
   .wrap .main__btn {
     background-color: #22A75D;

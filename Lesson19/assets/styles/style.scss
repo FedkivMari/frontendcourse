@@ -7,12 +7,12 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #0F1320;
-    background-image: url(../imgs/bgr_main.svg), url(../imgs/Frame\ 45.svg);
+    background-image: url(../imgs/Frame\ 45.svg);
     background-repeat: no-repeat;
-    background-position: center right, top left;
-    background-size: 50%, 100%;
+    background-position: top left;
+    background-size: 100%;
     & .header{
-        height: 8%;
+        height: 40px;
         width: 90%;
         padding: 2% 3%;
         display: flex;
@@ -20,6 +20,7 @@ body {
         align-items: center;
         & img {
             width: 185px;
+            align-self: flex-start;
         }
         & .nav {
             width: 60%;
@@ -30,9 +31,12 @@ body {
                 @include header5;
                 padding: 0% 2%;
                 list-style-type: none;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
-        & .btns {
+        &__btns {
             width: 20%;
             display: flex;
             justify-content: space-between;
@@ -42,28 +46,37 @@ body {
                 &:last-child {
                     border: 2px solid #22A75D;
                     border-radius: 52px;
-                }    
+                }  
+                &:hover {
+                    cursor: pointer;
+                }  
             }
         } 
     }
     & .main {
-        width: 532px;
-        height: 40%;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 85%;
         padding-left: 10%;
-        padding-top: 8%;
-        & h5{
-            background: linear-gradient(0deg, #2B3087 0%, #00B4EC 81.99%), #FFD100;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            
-        }
-        & h1{
-            @include header1;
-        }
-        & p {
-            @include paragraph;
-            opacity: 0.6;
+        margin: 0px;
+        &__content {
+            width: 532px;
+            align-self: center;
+            & h5{
+                background: linear-gradient(0deg, #2B3087 0%, #00B4EC 81.99%), #FFD100;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                
+            }
+            & h1{
+                @include header1;
+            }
+            & p {
+                @include paragraph;
+                opacity: 0.6;
+            }
         }
         &__btn{
             padding: 2% 5%;
@@ -71,37 +84,62 @@ body {
             border: 2px solid #22A75D;
             border-radius: 52px;
             @include header5;
+            &:hover {
+                cursor: pointer;
+            }
         }
+        &__img {
+            width: 50%;
+            background-image: url(../imgs/bgr_main.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            
+        }
+
     }
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     .wrap{
-        background-image: none;
+       
         & .header{
             width: 90%;
             padding: 2% 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 100px;
             & .nav {
                display: none;
             }
-            & .btns {
+            &__btns {
                 display: none;
             } 
         }
         & .main {
-            width: 90%;
-            height: 89%;
-            padding: 0% 5%;
-            background-image: url(../imgs/bgr_mobile.svg);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: 100%;
-            & h5{
-                margin: 5px;
+            width: 100%;
+            padding-left: 0%;
+            flex-direction: column;
+            // &__img {
+            //     background-image: none;
+            // }
+            &__content{
+                width: 90%;
+                height: 49%;
+                padding: 0% 5%;
+                
+                & h5{
+                    margin: 5px;
+                }
+            }
+            &__img{
+                width: 100%;
+                height: 50%;
+                background-image: url(../imgs/bgr_mobile.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
             }
             &__btn{
                 background-color: #22A75D;
