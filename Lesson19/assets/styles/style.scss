@@ -18,6 +18,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         & img {
             width: 185px;
             align-self: flex-start;
@@ -52,7 +53,22 @@ body {
                 }  
             }
         } 
+        & span {
+            color: white;
+            cursor: pointer;
+            font-size: 28px;
+        }
+        & .close {
+            display: none;
+            z-index: 11;
+        }
+        .mobile {
+            &-on {
+                display: none !important;
+            }
+        }
     }
+    
     & .main {
         display: flex;
         justify-content: space-between;
@@ -112,10 +128,25 @@ body {
             align-items: center;
             height: 100px;
             & .nav {
-               display: none;
+               flex-direction: column;
+               justify-content: space-evenly;
+                background-color: #0f1320;
+                height: 15vh;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
             }
-            &__btns {
-                display: none;
+           
+            .mobile {
+                &-on {
+                    display: block !important;
+                }
+        
+                &-off {
+                    display: none;
+                }
             } 
         }
         & .main {
@@ -149,4 +180,5 @@ body {
             }
         }
     }
+    
 }    

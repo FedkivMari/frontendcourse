@@ -12,17 +12,22 @@
     <div class="wrap">
         <header class="header">
             <img src="./assets/imgs/logo.svg" alt="logo"/>  
-            <ul class="nav">
+            <ul class="mobile-off nav">
                 <li>Our team</li>
                 <li>Tokens</li>
                 <li>Connect wallet</li>
                 <li>Lightpaper</li>
             </ul>
-            <div class="header__btns">
+            <div class="mobile-off header__btns">
                 <div>Sign In</div>
                 <div>Sign Up</div>
             </div>
-               
+            <span class="mobile-on material-symbols-outlined" onclick="openMenue()">
+                menu
+            </span>
+            <span class="mobile-off material-symbols-outlined close" onclick="closeMenue()">
+                close
+            </span>
         </header>
         <div class="main">
             <div class="main__content">
@@ -44,5 +49,20 @@
             </div>
         </div>
     </div>
+    <script>
+        function openMenue() {
+            let close = document.getElementsByClassName('close')[0];
+            close.className = "mobile-on material-symbols-outlined close";
+            let menus = document.getElementsByClassName('nav')[0];
+            menus.className = "nav"
+        }
+
+        function closeMenue() {
+            let close = document.getElementsByClassName('close')[0];
+            close.className = "mobile-off material-symbols-outlined close";
+            let menus = document.getElementsByClassName('nav')[0];
+            menus.className = "mobile-off nav"
+        }
+    </script>
 </body>
 </html>

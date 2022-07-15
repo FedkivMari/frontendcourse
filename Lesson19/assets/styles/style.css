@@ -87,6 +87,18 @@ body {
 .wrap .header__btns div:hover {
   cursor: pointer;
 }
+.wrap .header span {
+  color: white;
+  cursor: pointer;
+  font-size: 28px;
+}
+.wrap .header .close {
+  display: none;
+  z-index: 11;
+}
+.wrap .header .mobile-on {
+  display: none !important;
+}
 .wrap .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,9 +194,25 @@ body {
     height: 100px;
   }
   .wrap .header .nav {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: #0f1320;
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
-  .wrap .header__btns {
+  .wrap .header .mobile-on {
+    display: block !important;
+  }
+  .wrap .header .mobile-off {
     display: none;
   }
   .wrap .main {
