@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <img src="./assets/imgs/logo.svg" alt="logo"/>  
+            <ul class="mobile-off nav">
+                <li>Our team</li>
+                <li>Tokens</li>
+                <li>Connect wallet</li>
+                <li>Lightpaper</li>
+            </ul>
+            <div class="mobile-off header__btns">
+                <div>Sign In</div>
+                <div>Sign Up</div>
+            </div>
+            <span class="mobile-on material-symbols-outlined" onclick="openMenue()">
+                menu
+            </span>
+            <span class="mobile-off material-symbols-outlined close" onclick="closeMenue()">
+                close
+            </span>
+        </header>
+        <div class="main">
+            <div class="main__content">
+                <h5>
+                    At Tokners we are
+                </h5>
+                <h1>
+                    Reimagining social media through the power of the blockchain.
+                </h1>
+                <p>
+                    We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network
+                </p>
+                <button class="main__btn">
+                    Learn More
+                </button>
+            </div>
+            <div class="main__img">
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        function openMenue() {
+            let close = document.getElementsByClassName('close')[0];
+            close.className = "mobile-on material-symbols-outlined close";
+            let menus = document.getElementsByClassName('nav')[0];
+            menus.className = "nav"
+        }
+
+        function closeMenue() {
+            let close = document.getElementsByClassName('close')[0];
+            close.className = "mobile-off material-symbols-outlined close";
+            let menus = document.getElementsByClassName('nav')[0];
+            menus.className = "mobile-off nav"
+        }
+    </script>
+</body>
+</html>
