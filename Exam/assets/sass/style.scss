@@ -1,0 +1,301 @@
+@import './constans.scss';
+
+body{
+    margin: 0;
+}
+.wrap{
+    height: 350vh;
+    width: 100vw;
+    & header {
+        height: 80vh;
+        width: 100%;
+        background-image: url(../imgs/bgr_Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        & .header{
+            &__content{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 8%;
+                & h1{
+                    @include header1;
+                    align-self:center;
+                    margin: 0%
+                }
+                & h4 {
+                    @include header4;
+                    letter-spacing: 6.82px;
+                    margin: 0%;
+                }
+                & p{
+                    @include paragraph-J;
+                    letter-spacing: 2.8px;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+            &__search {
+                background-color: $primary;
+                width: 40%;
+                & input{
+                    background-color: transparent;
+                    border: none;
+                    width: 68%;
+                    text-align: center;
+                    color: black;
+                    @include paragraph-J;
+                    letter-spacing: 2.8px;
+                }
+                & button {
+                   width: 30%;
+                }
+            }
+            &__menu{
+                align-self:stretch;
+                background-color: $secondary;
+                display: flex;
+                justify-content: space-around;
+                & .logo{
+                    @include header4;
+                    font-size: 24px;
+                    letter-spacing: 2.4px;
+                    text-transform: uppercase;
+                }
+                & ul {
+                    width: 40%;
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & li {
+                        @include paragraph-A;
+                        font-size: 14px;
+                        list-style-type: none;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .main {
+        height: 85vh;
+        padding: 0% 15%;
+        background-image: url(../imgs/bgr_Choose.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &__content{
+            width: 45%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & h3 {
+                @include header3-A;
+            }
+            & p {
+                 @include paragraph-J;
+                 color: $cremy;
+            }
+        }
+        &__image{
+            width: 40%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & img:last-child{
+               align-self: flex-end;
+               justify-self:end;
+            }
+        }
+    }
+    & .HowItWork {
+        height: 40vh;
+        background-color: $background;
+        @include header3-A;
+        padding: 0% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__wrap {
+            width: 70%;
+            height: 80%;
+            position: relative;
+            & img {
+                position: absolute;
+                top: 0%;
+                left: 100px;
+                z-index: 1;
+            }
+            & .point {
+                position: absolute;
+                text-align: center;
+                background-color: $background;
+                z-index: 10;
+                
+                &:nth-child(2){
+                   top: 60px;
+                   & span {
+                       font-size: 55px;
+                       color: $secondary;
+                   }
+                }
+                &:nth-child(3){
+                    left: 270px;
+                    top: 60px;
+                    & span {
+                        font-size: 55px;
+                        color: $icon-3;
+                    }
+                }
+                &:nth-child(4){
+                    left: 520px;
+                    top: 60px;
+                    & span {
+                        font-size: 55px;
+                        color: $icon-2;
+                    }
+                }
+            }
+        }
+        
+    }
+    & .content {
+         height: 150vh;
+        
+        &__first{
+            height: 46%;
+            background-image: url(../imgs/bgr_content2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 5%;
+            padding-left: 15%;
+    
+        }
+        &__second{
+            height: 46%;
+            background-image: url(../imgs/bgr_content1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 5%;
+            padding-right: 15%;
+            display: flex;
+            justify-content: end;
+        }
+        &__hotel {
+            background: #232323;
+            mix-blend-mode: normal;
+            opacity: 0.9;
+            width: 30%;
+            height: 50%;
+            padding: 5%;
+            & h3 {
+                @include header5;
+            }
+            & p {
+                @include paragraph-J;
+                color: $cremy;
+                &:nth-child(1){
+                    font-size: 20px;
+                    letter-spacing: 1.5px;
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+    & .respond{
+        height: 83vh;
+        background-image: url(../imgs/bgr_respond.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        align-self: center;
+        align-items: center;
+        padding: 2% 10%;
+        & h3{
+            @include header3-A;
+            text-align: center;
+            
+        }
+        &__content {
+            width: 100%;
+            height: 52%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        &__text{
+            width: 70%;
+            background-color: $background;
+            box-sizing: border-box;
+            padding: 3%;
+            & h5 {
+                @include header5;
+                margin: 0;
+            }
+            & p {
+                @include paragraph-J;
+                & span {
+                    color: $secondary;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    & footer {
+        height: 25vh;
+        background-color: $background-footer;
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr;
+        & h4{
+            @include header4;
+            margin: 0;
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: center;
+            text-transform: uppercase;
+        }
+        & p{
+            @include paragraph-J;
+            margin: 0;
+            grid-row: 3;
+            grid-column: 2;
+            justify-self: center;
+            letter-spacing: 1.6px;
+        }
+        & div{
+            width: 100%;
+            grid-row: 5;
+            grid-column: 2;
+            justify-self: center;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+    }
+    & .btn{
+        height: 63px;
+        width: 228px;
+        background-color: $secondary;
+        @include paragraph-A;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

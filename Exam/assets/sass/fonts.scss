@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
+$h1-size: 48px;
+$h3-size: 36px;
+$h4-size: 26px;
+$h5-size: 20px;
+$p-size: 14px;
+
+@mixin header1 {
+    font-size:$h1-size;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $primary;
+}
+@mixin header3 {
+    font-size:$h3-size;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    line-height: 26px;
+    color: $primary;
+}
+@mixin header3-A {
+    font-size:$h3-size;
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary;
+}
+@mixin header4 {
+    font-size:$h4-size;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    line-height: 26px;
+    color: $primary;
+}
+@mixin header5 {
+    font-size:$h5-size;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary;
+    text-transform: uppercase;
+}
+@mixin paragraph-A {
+    font-size:$h5-size;
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+@mixin paragraph-J {
+    font-size:$p-size;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary;
+}
