@@ -299,3 +299,147 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 480px)  {
+   
+    .wrap { 
+        & header{
+           padding-top: 100px;
+           box-sizing: border-box;
+            & .header{
+                &__content{
+                    & h4 {
+                        letter-spacing: 4px;
+                    }
+                }
+                &__search {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    & input{
+                        width: 100%;
+                        height: 40px;
+                        color: black!important;
+                    }
+                    & button {
+                        width: 100%;
+                        height: 35px;
+                    }
+                }
+                &__menu{
+                    
+                    & ul {
+                        display: none;
+                        // width: 40%;
+                        // margin: 0;
+                        // display: flex;
+                        // justify-content: space-between;
+                        // align-items: center;
+                        // & li {
+                        //     @include paragraph-A;
+                        //     font-size: 14px;
+                        //     list-style-type: none;
+                        //     &:hover {
+                        //         cursor: pointer;
+                        //     }
+                        // }
+                    }
+                }
+            }
+        } 
+        & .main {
+            height: 85vh;
+            padding: 0% 5%;
+            flex-direction: column;
+            &__content{
+                width: 90%;
+                height: 55%;
+                & h3 {
+                    font-size: 28px;
+                    text-align: center;
+                }
+            }
+            &__image{
+                width: 90%;
+                height: 40%;
+            }
+        }  
+        & .HowItWork {
+            height: 150px;
+            font-size: 14px;
+            &__wrap {
+                width: 100%;
+                & img {
+                    position: absolute;
+                    left: 50px;
+                    width: 70%;
+                }
+                & .point {
+                                        
+                    &:nth-child(2){
+                        top: 20px;
+                        left: 10px;
+                        & span {
+                           font-size: 26px;
+                        }
+                    }
+                    &:nth-child(3){
+                        left: 115px;
+                        top: 20px;
+                        & span {
+                            font-size: 26px;
+                        }
+                    }
+                    &:nth-child(4){
+                        left: 205px;
+                        top: 20px;
+                        & span {
+                            font-size: 26px;
+                            color: $icon-2;
+                        }
+                    }
+                }
+            }
+            
+        }
+        & .content {
+            height: 150vh;
+            &__first{
+                padding: 10%;
+                display: flex;
+                justify-content: center;
+            }
+            &__second{
+                padding: 10%;
+                display: flex;
+                justify-content: center;
+            }
+            &__hotel {
+                width: 80%;
+                height: 60%;
+            }
+        }
+        & .respond{
+            display: flex;
+            flex-direction: column;
+           
+            &__content {
+                flex-direction: column;
+                height: 80%;
+            }
+            &__img{
+                & img{
+                    width: 100%;
+                }
+            }
+            &__text{
+                width: 100%;
+                & p{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+
