@@ -6,8 +6,8 @@ var countNull = 0;
 var countOdd = 0;
 var countEven = 0;
 var i=0;
-while (i!=numS.length) {
-    debugger
+while (i-1!=numS.length) {
+    
     let num = "";
     // let j=0;
     for (var j=i; numS[j]!= " "; j++) {
@@ -28,6 +28,6 @@ while (i!=numS.length) {
     if (+num%2==0){
         countEven++;
     } else {countOdd++;};
-    debugger
+    
 }
-console.log (countEven, countOdd, countNeg, countPos, countNull);
+console.log (`Your numbers = `+numS+` conteins: even=`+ countEven + `, odd=` + countOdd +`, negative=`+ countNeg + `, positive=` + countPos + `, null=` + countNull);
