@@ -1,6 +1,8 @@
+
+// Request two numbers and find only their largest common divisor.
+
 let numOne = +(prompt ('Enter first number'));
 let numTwo = +(prompt ('Enter second number'));
-let gcd=1;
 
 while ( numOne!=0 && numTwo!=0) {
     if (numOne>numTwo) {
@@ -12,4 +14,4 @@ while ( numOne!=0 && numTwo!=0) {
 } 
 
 
-alert (numOne+numTwo);
+alert (`largest common divisor is` + (numOne+numTwo));

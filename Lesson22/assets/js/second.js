@@ -1,3 +1,6 @@
+
+// Request a five-unit number from a user and check whether it is a palindrome.
+
 let num = (prompt ('Enter a five-unit number'));
 let length =num.length;
 let i=0;

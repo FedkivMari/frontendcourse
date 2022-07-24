@@ -1,33 +1,28 @@
-let numS = prompt('Enter 10 numbers in 1 line');
 
-var countPos = 0;
-var countNeg = 0;
-var countNull = 0;
-var countOdd = 0;
-var countEven = 0;
-var i=0;
-while (i-1!=numS.length) {
-    
-    let num = "";
-    // let j=0;
-    for (var j=i; numS[j]!= " "; j++) {
-        
-        if (numS[j]==undefined) break;
-        num+=numS[j];
-    }
-    i=j+1;
-    if (num == 0){
-        countNull++;
-    }  else
-       {if (+num>0){
-           countPos++;
-           } else
-            {countNeg++;}
-        };
+/*Request a date (dd:mm:yy) and put out the one that goes after it. Pay attention to the start of a new month,
+  new year, and also leap years.*/
 
-    if (+num%2==0){
-        countEven++;
-    } else {countOdd++;};
-    
-}
-console.log (`Your numbers = `+numS+` conteins: even=`+ countEven + `, odd=` + countOdd +`, negative=`+ countNeg + `, positive=` + countPos + `, null=` + countNull);
+  let curentDate=prompt(`Enter a date (dd:mm:yy)`);
+  let dd = curentDate.slice(0,2);
+  let mm = curentDate.slice(3,5);
+  let yy = curentDate.slice(6);
+  if (mm==02){
+    var nextDate = (+dd<28)? ((+dd+1)+ `:` + mm + `:` + yy):
+                   (+yy%4!=0)||(dd==29)? (`01:03:` + yy):
+                   (`29:02:` + yy);
+  } else if (mm==(04||06||09||11)) {
+    var nextDate = (+dd<30)?
+                   ((+dd+1)+ `:` + mm + `:` + yy):
+                   (`01:` + (+mm+1) + `:` + yy);
+  } else if (mm==12) {
+    var nextDate = (+dd<31)?
+                   ((+dd+1)+ `:` + mm + `:` + yy):
+                   (`01:01:` + (+yy+1));
+  }
+   else {
+    var nextDate = (+dd<31)?
+                   ((+dd+1)+ `:` + mm + `:` + yy):
+                   (`01:` + (+mm+1) + `:` + yy);
+  }
+
+  alert (`Next date: ` + nextDate);
