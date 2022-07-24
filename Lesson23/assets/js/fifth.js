@@ -12,7 +12,7 @@ var countNull = 0;
 var countOdd = 0;
 var countEven = 0;
 var i=0;
-while (i-1!=numS.length) {
+while ((i-1)!=numS.length) {
     
     let num = "";
     // let j=0;
@@ -25,13 +25,13 @@ while (i-1!=numS.length) {
     if (num == 0){
         countNull++;
     }  else
-       {if (+num>0){
+       {if (num>0){
            countPos++;
            } else
             {countNeg++;}
         };
 
-    if (+num%2==0){
+    if (num%2==0){
         countEven++;
     } else {countOdd++;};
     
