@@ -1,9 +1,11 @@
-let num = ('Enter a number');
+let num = prompt('Enter a number');
 
 let i=1;
-var k;
+let  k = `d=`;
 
-for (i<num; num%i==0; i++) {
-    k +=`i`;
-    alert (k);
+for (let i=1; i<=num; i++) {
+    if (num%i==0){
+        k +=i+`, `;
+    }
 }
+console.log(k);
