@@ -10,14 +10,19 @@ Note that every 4 hours the driver has to take a 1-hour break. */
  myCar.model = 'Mustang';
  myCar.year = 1969;
  myCar.speed = 150;
- 
- console.log(myCar);
+ myCar.info = function() {
+   return this.make + " " + this.model+ " " + this.year+ " " + this.speed;
+ };
+ myCar.countTime = function() {
+   let distance = prompt("Enter distance");
+   let time = (distance/myCar.speed);
+   let rest = ~~(time/4);
+   console.log(`You need ${time+rest} hours`);
+ };
 
- let distance = prompt("Enter distance");
- let time = (distance/myCar.speed);
- let rest = ~~(time/4);
+
+
  
- console.log(`You need ${time+rest} hours`);
  
 
  

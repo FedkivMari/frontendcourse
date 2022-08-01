@@ -2,7 +2,7 @@
  If there is only one parameter given, it counts as a square. */
 let area = 0;
 function caclArea(sideOne, sideTwo){
-     if (sideTwo==undefined)
+     if (sideTwo===undefined)
      {
         area= sideOne*sideOne;
      } else
