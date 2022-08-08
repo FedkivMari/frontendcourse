@@ -1,6 +1,18 @@
+let numOne = ''; // first number
+let numTwo = ''; // second number
+let operator = ''; // operator
 
-// displaying information on the screen
-function display(variable)
+
+function clearAll()  // clear screen
+{
+    let numOne = ''; 
+    let numTwo = ''; 
+    let operator = '';
+    document.getElementsByClassName("cacl__screen_white")[0].textContent = 0;
+}
+
+
+function display(variable) // displaying information on the screen
 {
     const screen=document.getElementsByClassName("cacl__screen_white");
     screen[0].innerHTML = variable;
@@ -11,9 +23,15 @@ display('some text');
 
 
 
-// const dom=document.querySelector('.cacl__screen_white');
-// console.log(dom);
+function clearAll()  // clear screen
+{
+    let numOne = ''; 
+    let numTwo = ''; 
+    let operator = '';
+    document.getElementsByClassName("cacl__screen_white")[0].textContent = 0;
+}
 
-// const screen=document.getElementsByClassName("cacl__screen_white");
-// const screenText = screen[0].innerText;
-// console.log(screenText);
+clearAll();
+
+
+
