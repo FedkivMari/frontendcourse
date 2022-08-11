@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation"> 
+        <li>
+            <ul id="first" onclick="choosePage(this.innerHTML)">1</ul>
+            <ul onclick="choosePage()">2</ul>
+            <ul onclick="choosePage()">3</ul>
+            <ul onclick="choosePage()">4</ul>
+        </li>
+    </div>
+    <div class="main__box"> 
+        <div class="post">
+            <h2>title</h2>
+            <p>ksjbdv/lsdnv:SjdvOjdv/ladjvks</p>
+        </div>
+        <div class="user">
+           <h2>username</h2>
+           <p>company </p>
+        </div>
+    </div>
+
+    <script> 
+        const posts=document.querySelector(`main__box`);
+        let page = 1;
+        const APIURL='https://jsonplaceholder.typicode.com';
+        
+        // const request = new XMLHttpRequest();
+        // request.open('GET',APIURL)
+        // request.send()
+        // request.responseType='json';
+        // request.onload = () => {
+        //     if (request.status >= 400){
+        //         console.error (request.response);
+        //     } else {
+        //     console.log (request.response);
+        //     }
+        // }
+
+        fetch(`${APIURL}/users`)
+            .then(response => response.json())
+            .then(users => {
+                let usersArray = [];
+                users.forEach(user =>
+                   {
+                        usersArray.push ({
+                            id: user.id,
+                            name: user.name,
+                            company: user.company.name,
+                        })
+                   }
+                );
+                console.log(usersArray);
+            });
+
+        fetch(`${APIURL}/posts`)
+            .then(response => response.json())
+            .then(posts => {
+                for (let index = 0 + page*10; index < 10+page*10; index++) {
+                            const element = posts[index];
+                            console.log(element);
+                        }
+
+                posts.forEach(post => 
+                    {
+                        
+                    }
+                );
+            });    
+            
+    </script>
+</body>
+</html>
