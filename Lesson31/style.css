@@ -5,18 +5,9 @@ body{
 .navigation  {
     height: 70px;
     width: 80%;
+    align-items: center;
 }
-.navigation li{
-    list-style-type: none;
-    
-}
-.navigation ul{
-    display: inline;
-    margin: 2px;
-    background-color: bisque;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 .main__box {
     width: 90%;
     padding-left: 5%;
