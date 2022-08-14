@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+.page {
+    width: 100%;
+    background-color: #222021;;
+    color: #F5F5F5;
+    &__navigation {
+        background-color: #1E0C06;
+        border-bottom-left-radius:79px;
+        border-bottom-right-radius:79px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px 50px; 
+        & img{
+            height: 83px;
+        }
+        & ul{
+            list-style-type: none;
+            width: 45%; 
+            display: flex;
+            justify-content: space-around;
+            & li{
+                
+            }
+        }
+    }
+    &__main{
+        background-image: url(../imgs/Group\ 10.svg);
+        box-sizing: border-box;
+        padding: 20px 50px; 
+        & #gallery{
+            width: 100%;
+            text-align: center; 
+            & .slider{
+                position: relative;
+                padding: 0px 60px;
+                & img {
+                    border-radius: 40px;
+                    width: 80%;
+                }
+                & .slick{
+                    &-track{
+                        display: flex;
+                    }
+                    &-list {
+                        overflow: hidden;
+                    }
+                    &-arrow{
+                        position: absolute;
+                        top: 50%;
+                        z-index: 10;
+                        width: 60px;
+                        height: 60px;
+                        border: none;
+                    }
+                    &-arrow.slick-prev{
+                        left: 0;
+                        font-size: 0;
+                        background: url(../imgs/arrow-left_icon-icons.com_72376.svg) 0 0 no-repeat transparent;
+                    }
+                    /* Стрелка вправо */
+                    &-arrow.slick-next{
+                        right: 0;
+                        font-size: 0;
+                        background: url(../imgs/arrow-right_icon-icons.com_72375.svg) 0 0 no-repeat transparent;
+                    }
+                }
+                
+                
+                /* Стрелка влево */
+                
+                & .slick-dots{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                & .slick-dots li{
+                   list-style: none;
+                   margin: 0 10px;
+                }
+                /* Элемент точки */
+                & .slick-dots li button{
+                    font-size: 0;
+                    width: 26px;
+                    height: 26px;
+                    border: solid #728BAD;
+                    border-radius: 50%;
+                    background: transparent;;
+                }
+                /* Активная точка */
+                & .slick-dots li.slick-active{
+                    background-color: #F5F5F5;
+                }
+            }
+            
+            
+        }
+        & .material{
+            width: 100%;
+            text-align: center; 
+            & .material__items{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                
+                & .material__item{
+                    width: 30%;
+                    & .list{
+                        text-align: start;
+                        width: 50%;
+                        margin-left: 120px;
+                    }
+                }
+            }
+        }
+    
+        & .questions {
+            width: 100%;
+            text-align: center;
+            &__content{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+            &__form{
+                width: 40%;
+                height: 555px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                & input{
+                    border-color: #728BAD;
+                    border-radius: 42px;
+                }
+                &_text{
+                    height: 77px;
+                    width: 100%;
+                    color: white;
+                    background: transparent;
+                } 
+                &_text-area{
+                    height: 257px;
+                    width: 100%;
+                    color: white;
+                    background: transparent;
+                } 
+                &_submit{
+                    height: 77px;
+                    width: 200px;
+                    background-color: #728BAD;
+                    color: white;
+                } 
+            }  
+            &__text{
+                width: 40%;
+                & img{
+                    width: 480px;
+                    rotate: -25deg;
+                }
+            }  
+            
+        }
+    }
+    &__contact{
+        height: 1095px;
+        background-image: url(../imgs/Group\ 10.svg);
+        box-sizing: border-box;
+        padding: 0px 50px; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & .contact__info{
+            width: 30%;
+        }
+        & #map {
+            height: 493px;
+            /* The height is 400 pixels */
+            width: 428px;
+            /* The width is the width of the web page */
+            border-radius: 40px;
+          }
+    }
+    &__footer{
+        background-color: #1E0C06;
+        height: 300px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 60px 50px; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:flex-start;
+        & img{
+            height: 84px;
+        }
+        & p{
+            width: 300px;
+        } 
+    }
+}
+
+// #map {
+//     height: 493px;
+//     /* The height is 400 pixels */
+//     width: 428px;
+//     /* The width is the width of the web page */
+//   }
