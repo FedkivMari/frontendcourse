@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import './App.css';
-import Form from './Components/Form';
-import TodoContainerV2 from './Components/TodoContainerV2';
+import React from 'react';
 import TodoContainer from './Components/TodoContainer';
+import './App.css';
+// import Form from './Components/Form';
+import TodoContainerV2 from './Components/TodoContainerV2';
+// import TodoContainer from './Components/TodoContainer';
 
 
 function App() {
     return (
         <div className="App">
-           
             <header className='header__name'>
-              <TodoContainer />
-              < TodoContainerV2/>
+            <TodoContainerV2/>
+            <TodoContainer/>
             </header>
-        
-      </div>
-    </div>
-  );
+        </div>
+    );
 }
+export default App;
