@@ -6,20 +6,51 @@ class TodoContainer extends React.Component {
    constructor(props){
     super(props);
     this.state=
-    { counter:0,}
+    { 
+       task:"",
+       todos:[],
+    };
+    this.addTodos=this.addTodos.bind(this);
+    this.addTodo=this.addTodo.bind(this);
    }
-    addOne(){
+       
+    addTodo(value){
         this.setState({
-            counter: this.state.counter+1,
-        });
+            task: value,
+        })
     }
-  
+    addTodos(task){
+        this.setState({
+            todos:[...this.state.todos, this.state.task]
+        })
+    }
+    
     render() {
     return (
         <div>
-            {/* <h1 onClick={()=>this.addOne()}>{this.state.counter}</h1> */}
-            <TextField id="outlined-basic" label="Outlined" variant="outlined"/>
+            <TextField  
+                onChange={(event)=>this.addTodo(event.target.value)}
+                id="outlined-basic"
+                label="Outlined" 
+                variant="outlined"/>
+            <Icon style={{cursor:'pointer'}} 
+                color="primary"
+                onClick={()=> this.addTodos()}
+                >
+                add_circle</Icon> 
+            <ul>
+                {this.state.todos.map((todo, index) => (
+                    <li key={index}>{todo}</li>
+                ))}
+            </ul>     
+            
+            {/* <h1>
+            {this.state.todo.map(todo => (
+                        <li>{todo.title}</li>
+                    ))}
+            </h1> */}
         </div>
+         
     )
   }
 }
