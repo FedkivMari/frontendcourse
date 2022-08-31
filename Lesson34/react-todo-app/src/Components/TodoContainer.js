@@ -14,14 +14,19 @@ class TodoContainer extends React.Component {
     this.addTodo=this.addTodo.bind(this);
    }
        
-    addTodo(value){
+    // addTodo(value){
+    //     this.setState({
+    //         task: value,
+    // })
+    addTodo(event){
         this.setState({
-            task: value,
+            task: event.target.value,
         })
     }
     addTodos(task){
         this.setState({
-            todos:[...this.state.todos, this.state.task]
+            todos:[...this.state.todos, this.state.task],
+            task:"",
         })
     }
     
@@ -29,10 +34,13 @@ class TodoContainer extends React.Component {
     return (
         <div>
             <TextField  
-                onChange={(event)=>this.addTodo(event.target.value)}
+                // onChange={(event)=>this.addTodo(event.target.value)}
+                onChange={this.addTodo}
                 id="outlined-basic"
                 label="Outlined" 
-                variant="outlined"/>
+                variant="outlined"
+                // value={this.task}     It's not work. Why? I want to clear text field after adding the task
+                />
             <Icon style={{cursor:'pointer'}} 
                 color="primary"
                 onClick={()=> this.addTodos()}
@@ -43,14 +51,7 @@ class TodoContainer extends React.Component {
                     <li key={index}>{todo}</li>
                 ))}
             </ul>     
-            
-            {/* <h1>
-            {this.state.todo.map(todo => (
-                        <li>{todo.title}</li>
-                    ))}
-            </h1> */}
         </div>
-         
     )
   }
 }

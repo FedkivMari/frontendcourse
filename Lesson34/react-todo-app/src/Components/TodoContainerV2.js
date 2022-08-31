@@ -2,10 +2,8 @@ import React, {useState} from 'react';
 import TextField from '@mui/material/TextField';
 import Icon from '@mui/material/Icon';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Checkbox from '@mui/material/Checkbox';
+import TodoList from './TodoList';
+
 // import { formHelperTextClasses } from '@mui/material';
 
 const TodoContainerV2 =()=>{
@@ -18,13 +16,18 @@ const TodoContainerV2 =()=>{
     
     const addTodo=()=>{
         setTodos([...todos, {value:todo, checked:false}]);
+        setTodo('');
      }
     const handleToggle = (index) =>{
         let temp = todos;
         temp[index].checked = !temp[index].checked;
         setTodos([...temp]);
     }
-
+    const delTodo = (index) =>{
+        let temp = todos;
+        temp.splice(index, 1);
+        setTodos([...temp]);
+    }
     return(
         <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
             {/* <h1 onClick={()=> addOne() }>{counter}</h1> */}
@@ -33,7 +36,8 @@ const TodoContainerV2 =()=>{
                 onChange={(event)=>setTodo(event.target.value)}
                 id="outlined-basic"
                 label="Outlined"
-                variant="outlined"/>
+                variant="outlined"
+                value={todo}/>
                 <Icon 
                     style={{cursor:'pointer'}}
                     color="primary"
@@ -43,21 +47,7 @@ const TodoContainerV2 =()=>{
             <List dense component="div" role="list" className="lists">
                 {todos.map((tempTodo, index)=>{
                     return(
-                        <ListItem
-                        key={index}
-                        role="listitem"
-                        button
-                        onClick={handleToggle(index)}
-                        >
-                            <ListItemIcon>
-                            <Checkbox
-                            checked={todo.checked}
-                            tabIndex={-1}
-                            disableRipple
-                            />
-                            </ListItemIcon>
-                            <ListItemText primary={tempTodo.value} />
-                        </ListItem>
+                        <TodoList index={index} todo={tempTodo} handleToggle={handleToggle} delTodo={delTodo}/>
                     // <h1 key={index}>{tempTodo.value}</h1>
                     )
                 })}
