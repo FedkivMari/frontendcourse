@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <title>bio-swt</title>
+</head>
+<body>
+    <div class="page">
+        <div class="page__navigation">
+            <img src="./assets/imgs/logo.png" alt="logo"/>
+            <ul>
+                <li>Gallery</li>
+                <li>Prices for services</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>    
+        </div>
+        <div class="page__main">
+            <div  id="gallery"> 
+                <h2>Our work</h2>
+                <div class="slider">
+                    <img class="slider_item" src="./assets/imgs/modern-wooden-kitchen-interior-steel-kitchen-faucet 2.png" alt="wooden-kitchen">
+                    <img class="slider_item" src="./assets/imgs/modern-wooden-kitchen-interior-steel-kitchen-faucet 2.png" alt="wooden-kitchen">
+                    <img class="slider_item" src="./assets/imgs/modern-wooden-kitchen-interior-steel-kitchen-faucet 2.png" alt="wooden-kitchen">
+                </div>
+            </div>
+            <section class="material">
+                <h2>THE WOOD WE WORK WITH</h2>
+                <div class="material__items">
+                    <div class="material__item">
+                        <img src="./assets/imgs/old-wood-grain-background 2.png" alt="oak"/>
+                        <p>Oak</p>
+                        <div class="list">
+                            <p><span class="material-symbols-outlined">
+                                done
+                                </span>
+                                Durability</p>
+                            <p><span class="material-symbols-outlined">
+                                done
+                                </span>Beautiful texture</p>
+                            <p><span class="material-symbols-outlined">
+                                done
+                                </span>Water resistance</p>
+                            <p><span class="material-symbols-outlined">
+                                close
+                                </span>Expensive</p>
+                        </div>
+                    </div>
+                    <div class="material__item">
+                        <img src="./assets/imgs/wood-texture-design-decoration 1.png" alt="buk"/>
+                        <p>Buk</p>
+                        <div class="list">
+                            <p><span class="material-symbols-outlined">
+                                done
+                                </span>
+                                Durability</p>
+                            <p><span class="material-symbols-outlined">
+                                close
+                                </span>Hard to handle</p>
+                        </div>
+                    </div>
+                    <div class="material__item">
+                        <img src="./assets/imgs/pale-oak-wood-texture-design-background 1.png" alt="ash"/>
+                        <p>Ash</p>
+                        <div class="list">
+                            <p><span class="material-symbols-outlined">
+                                done
+                                </span>
+                                Durability</p>
+                            <p><span class="material-symbols-outlined">
+                                close
+                                </span>Hard to handle</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <h2>Any questions?</h2>
+                <div class="questions__content">
+                    <form class="questions__form" action="" method="get">
+                        <input class="questions__form_text" type="text" placeholder="Your name">
+                        <input class="questions__form_text" type="text" placeholder="Your name">
+                        <input class="questions__form_text-area" type="textarea" placeholder="Your name">
+                        <input class="questions__form_submit" type="submit" value="Send">
+                    </form>
+                    <div class="questions__text">
+                        <p>Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.</p>
+                        <img src="./assets/imgs/deforestation-environmental-awareness-banner-with-chopped-wood-slice-removebg-preview 2.png" alt="chopped wood slice"/>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="page__contact">
+            <div class="contact__info">
+                <h2>Contact</h2>
+                <p> <span class="material-symbols-outlined">
+                    phone_in_talk
+                    </span> +420 000 000 000</p>
+                <p> <span class="material-symbols-outlined">
+                    location_on
+                    </span> Na Plzeňce 1166/0
+                    150 00</p>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="page__footer">
+            <div>
+                <img src="./assets/imgs/logo.png" alt="logo"/>
+                <p>Privacy Policy</p>  
+            </div>
+            <p> <span class="material-symbols-outlined">
+                phone_in_talk
+                </span> +420 000 000 000</p>
+            <p> <span class="material-symbols-outlined">
+                location_on
+                </span> Na Plzeňce 1166/0
+                150 00</p>
+            
+        </div> 
+    </div>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmyqU2pgttZk3AYSLDYYyXS2i6qIZANz8&callback=initMap&v=weekly"
+    defer
+  ></script>
+</body>
+</html>
