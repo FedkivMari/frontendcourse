@@ -1,0 +1,63 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.wrap {
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cacl__main{
+    width: 500px;
+    height: 600px;
+    
+   
+}
+.cacl__screen{
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    background-color: rgb(33, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cacl__screen_white{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    text-align: end;
+}
+
+.cacl__btns{
+    width: 100%;
+    height: 80%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    background-color: rgb(18, 20, 20);
+    padding: 25px;
+    box-sizing: border-box;
+    display: grid;
+    justify-self:center;
+    align-self: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+button {
+    color: white;
+    background-color: gray;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
